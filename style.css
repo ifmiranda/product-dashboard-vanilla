@@ -1,0 +1,27 @@
+
+:root {
+    --bg:#f7f7b;
+    --text:#111827;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --primary: #2563eb;
+    --radius: 14px;
+} 
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.5 system-ui, -appple-system, Segoe UI, Roboto, Arial, sans-serif; 
+} 
+
+.site-header {
+    background: white;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+} 
+.site-header h1 {
+    margin: 0;
+    padding: 16px 20px;
+} 
