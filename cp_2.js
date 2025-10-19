@@ -46,4 +46,26 @@ async function fetchProductsAsync() {
     } catch (error) {
         handleError(error);
     }
-} 
+}  
+// Step Six: Display of products in container
+function displayProducts (products) { 
+    const container = document.getElementById('product-container'); 
+    container.innerHTML = '';
+
+    products.slice(0,5).forEach((p) => {
+        const card = document.createElement('div');
+        card.className = 'card'; 
+
+        const name = document.createElement('div');
+        name.className = 'name';
+        name.textContent = getPrice(p);
+
+        card.appendChild(img);
+        card.appendChild(name);
+        card.appendChild(price);
+
+        container.appendChild(card);
+    }); 
+}
+// Step Seven: Call both methods 
+
